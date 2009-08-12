@@ -38,6 +38,13 @@ module LocalGAE
         end
         proxy.service('datastore_v3') # start datastore service
         ApiProxy.delegate = proxy
+        if block_given?
+          yield proxy
+          stop
+          nil
+        else
+          proxy
+        end
       end
 
       def stop

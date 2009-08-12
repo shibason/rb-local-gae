@@ -1,1 +1,3 @@
 LocalGAE
+The tiny library for testing GAE/JRuby application without dev_appserver.
+http://d.hatena.ne.jp/shibason/20090812/1250070639
